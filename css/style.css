@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@700;800&display=swap');
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Solway', sans-serif;
+    overflow-x: hidden;
+}
+
+/*Navigation Bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    padding: 1% 4%;
+    font-size: 1.5vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-icon img {
+    width:  2vw;
+}
+
+.logo-img   {
+    width: 3vw;
+}
+
+.logo-text {
+    width: 8vw;
+}
+
+.navbar-link {
+    float: left;
+    font-size: 2vw;
+}
+
+.navbar-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-link li {
+    list-style: none;
+}
+
+.navbar-link li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: gray;
+}
+
+.navbar-icon ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-icon li {
+    list-style: none;
+}
+
+.navbar-icon li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: gray;
+}
+
+.navbar-link li a:hover {
+    color: black;
+}
+
+.navbar-icon li a:hover {
+    background-color: gray;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3em;
+    height: 2.5em;
+}
+
+.toggle-button .bar {
+    height: .5em;
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .navbar{
+        padding-top: 1vh;
+    }
+
+    .logo-img {
+        width: 6vw;
+    }
+
+    .navbar-icon img {
+        width:  3vw;
+    }
+
+    .logo-text {
+        width: 15vw;
+    }
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-link {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-icon {
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-link ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-link li {
+        text-align: center;
+    }
+
+    .navbar-link li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-link.active {
+        display: flex;
+    }
+}
+
+/*Style for introsuction section*/
+.intro {
+    display: flex;
+    background-color: #DFDEFF;
+}
+
+.intro-text {
+    padding: 9% 4%;
+}
+
+.title {
+    font-size: 5vw;
+    font-weight: 800;
+    margin: 0;
+    color: #3F3D56;
+}
+
+.intro-body {
+    font-size: 1.5vw;
+}
+
+.intro-button {
+    font-family: 'Solway', sans-serif;
+    padding: 1vw 1.5vh;
+    font-size: 30px;
+    background-color: #7E77FF;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.intro-img img{
+    float: right;
+    border-radius: 10% 0 0 10%;
+}
+
+@media (max-width: 1300px) {
+    .intro {
+        background-image: url('img/IntroPic.jpg');
+        display: list-item;
+        text-align: center;
+        color: white;
+    }
+
+    .intro .title {
+        color: whitesmoke;
+    }
+
+    .intro-img img {
+        display: none;
+    }
+}
+
+/*How It Works*/
+
+.center-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.flex-how {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.how-list li {
+    font-size: 50px;
+    color: #7E77FF;
+    margin: 0;
+    padding: 0;
+}
+
+.how-list li h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.how-list li p {
+    font-size: 1vw;
+    color: black;
+}
+
+@media (max-width: 1300px) {
+   .flex-how{
+        display: flex;
+        text-align: left;
+        padding: 0 4%;
+   }
+
+    .flex-how img {
+       display: none;
+   }
+
+   .how-list li {
+        list-style: none;
+        font-size: 50px;
+        color: #7E77FF;
+    }
+
+    .how-list li h3 {
+        font-size: 4vw;
+        font-weight: 800;
+    }
+
+    .how-list li p {
+        font-size: 2vw;
+        color: black;
+    }
+}
+
+/*Component Section*/
+.component {
+    background-color: #DFDEFF;
+}
+
+.component-container {
+    padding: 8% 15%;
+    display: grid;
+    column-gap: 2%;
+    justify-content: center;
+    row-gap: 1%;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.card-item {
+    border-radius: 30px;
+    border: 3px solid #7E77FF;
+    padding: 5%;
+    font-size: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.card-item h3 {
+    color: #7E77FF;
+    font-size: 2vw;
+}
+
+@media (max-width: 1600px) {
+    .component-container {
+       display: list-item;
+       padding: 5% 15%;
+    }
+
+    .card-item {
+        display: flex;
+        margin: 3%;
+        width: 100%;
+        justify-content: center;
+        height: fit-content;
+        padding: 0;
+    }
+
+   .card-item img {
+       display: none;
+   }
+
+   .card-item h3 {
+    color: #7E77FF;
+    font-size: 2vw;
+}
+}
+
+/*Offers*/
+
+.flex-offer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.flex-offer img {
+    width: 50%;
+}
+
+.flex-offer h3 {
+    color: #7E77FF;
+    font-size: 2.7vw;
+}
+
+.flex-offer p {
+    font-size: 1.2vw;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media (max-width: 1300px) {
+    .flex-offer{
+        display: flex;
+        text-align: left;
+        padding: 0 4%;
+    }
+    .text-right {
+        text-align: left;
+    }
+
+     .flex-offer img {
+        display: none;
+    }
+
+    .flex-offer h3 {
+        font-size: 3vw;
+    }
+
+    .flex-offer p {
+        font-size: 2vw;
+    }
+ }
+
+ /*Footer*/
+.main-footer {
+    padding: 2% 10%;
+    background-color: #DFDEFF;
+}
+
+ .footer-container {
+     display: grid;
+     grid-template-columns: 35% auto auto auto;
+     column-gap: 3%;
+ }
+
+ .footer-logo {
+    display: flex;
+    align-items: center;
+ }
+
+ .footer-logo .logo-img {
+     width: 3vw; 
+     padding-right: 1%;
+ }
+
+ .footer-logo .logo-text {
+    width: 15vw;
+}
+
+.footer-item {
+    text-align: left;
+}
+
+ .footer-item li {
+     list-style: none;
+ }
+
+ .footer-item h3 {
+     font-size: 1.5vw;
+     margin: 0;
+     color: #7E77FF;
+ }
+
+ .footer-item p {
+    font-size: 1vw;
+    margin: 2px;
+}
+
+.footer-end {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #7E77FF;
+    padding: .5% 0;
+    font-size: 1.5vw;
+}
