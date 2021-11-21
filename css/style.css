@@ -195,6 +195,11 @@ body {
     cursor: pointer;
 }
 
+.intro-button:hover {
+    color: #7E77FF;
+    background-color: white;
+}
+
 .intro-img img{
     float: right;
     border-radius: 10% 0 0 10%;
@@ -249,31 +254,31 @@ body {
 }
 
 @media (max-width: 1300px) {
-   .flex-how{
+    .flex-how {
+        padding: 0 10%;
         display: flex;
-        text-align: left;
-        padding: 0 4%;
-   }
-
+    }
+    
     .flex-how img {
-       display: none;
-   }
+        width: 40%;
+    }
 
-   .how-list li {
+    .how-list li {
         list-style: none;
-        font-size: 50px;
-        color: #7E77FF;
+        margin: 0;
+        padding: 0;
     }
-
+    
     .how-list li h3 {
-        font-size: 4vw;
-        font-weight: 800;
+        font-size: 2.5vw;
+        margin: 1%;
     }
-
+    
     .how-list li p {
-        font-size: 2vw;
+        font-size: 1.5vw;
         color: black;
     }
+    
 }
 
 /*Component Section*/
@@ -360,16 +365,14 @@ body {
 @media (max-width: 1300px) {
     .flex-offer{
         display: flex;
-        text-align: left;
         padding: 0 4%;
-    }
-    .text-right {
-        text-align: left;
     }
 
      .flex-offer img {
-        display: none;
-    }
+        width: 50%;
+        height: 50%;
+        align-items: center;
+     }
 
     .flex-offer h3 {
         font-size: 3vw;
