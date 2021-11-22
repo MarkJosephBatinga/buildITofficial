@@ -429,19 +429,15 @@ body {
     text-align: left;
 }
 
- .footer-item li {
-     list-style: none;
- }
-
  .footer-item h3 {
      font-size: 1.5vw;
      margin: 0;
      color: #7E77FF;
  }
 
- .footer-item p, .footer-item span {
+ .footer-item p {
     font-size: 1vw;
-    margin: 2px;
+    margin: 0px;
 }
 
 .footer-item a{
@@ -455,16 +451,8 @@ body {
     display: block;
 }
 
-.footer-item i{
-    margin-right: 0.2vw;
-    width: 1vw;
-}
 
-.footer-item .twitter-fb, .footer-item .contact-info{
-    display: block;
-}
-
-.footer-item a:hover, .footer-item .twitter-fb span:hover{
+.footer-item a:hover, .footer-item .twitter-fb p:hover, .footer-item .contact-info p:hover{
     color: #7E77FF;
     cursor: pointer;
 }
@@ -501,5 +489,10 @@ body {
 
     .footer-item i {
         margin-right: .2rem;
+    }
+
+    .footer-item p, .footer-item a{
+        font-size: 1vw;
+        margin: 1px;
     }
 }
